@@ -1,0 +1,36 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}BlockSettle | Listings{% endblock %}
+
+{% block content %}
+<section class="top-section">
+    <div class="top-section_wrap">
+        <div class="container">
+            <h1>SPVs</h1>
+            <p>See a snapshot of all SPVs registered with BlockSettle and get a quick overview of their business,
+                relevant documents, and the number of outstanding shares.</p>
+            <a href="/listing/registrar-service">Registrar Service </span></a>
+        </div>
+    </div>
+</section>
+
+<div class='page-content listings'>
+    <div class="container">
+        <div class="row t-blocks_wrap">
+            <div class="col-sm-4 col-md-4">
+                <a href="/listings/blocksettle" class="t-block__link">
+                    <div class="t-block">
+                        <div class="logo"></div>
+                        <span href="/listings/blocksettle" class="link"></span>
+                        <div class="main-block">
+                            <h5 class="l-title">BlockSettle</h5>
+                            <p class="l-text">BlockSettle was established to develop matching and settlement models
+                                focused on blockchain ledger technologies.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

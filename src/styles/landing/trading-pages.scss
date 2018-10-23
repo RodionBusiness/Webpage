@@ -1,0 +1,252 @@
+
+/*trading pages*/
+.t-blocks_wrap {
+  margin-top: 30px;
+}
+
+.t-block {
+  background-color: #fff;
+  padding: 28px 37px 20px;
+  margin-bottom: 30px;
+  color: #4a4a4a;
+  font-size: 1.14rem;
+  line-height: 1.85rem;
+}
+
+.m_t-block_contact {
+  padding-bottom: 3rem;
+}
+
+.t-block_m {
+  margin-bottom: 0;
+}
+
+.t-block h3,
+.a-block h3 {
+  color: #4a4a4a;
+  font-size: 1.28rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  line-height: 1.7rem;
+  text-transform: uppercase;
+  margin: 0 0 25px;
+}
+
+.t-block h4 {
+  color: #4a4a4a;
+  font-size: 1.14rem;
+  line-height: 1.57rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 15px;
+}
+
+.t-block .table_wrap {
+  padding: 20px 0;
+  border-top: 1px solid #247dac;
+}
+
+.t-block .table_wrap {
+  padding: 20px 0;
+  border-top: 1px solid #247dac;
+}
+
+.t-block .table_wrap.no-style {
+  padding: 0;
+  border: none;
+}
+
+.t-block table {
+  width: 100%;
+}
+.t-block table td{
+  width: 50%;
+  color: #4a4a4a;
+  font-size: 1.14rem;
+  line-height: 1.85rem;
+}
+.t-block table td:first-child{
+  width: 50%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.first-cell-70.t-block table td:first-child{
+  width: 70%;
+}
+.t-block p{
+  color: #4a4a4a;
+  font-size: 1.14rem;
+  line-height: 1.85rem;
+  margin-bottom: 16px;
+}
+.left_pd{
+  padding-left: 0;
+}
+.right_pd{
+  padding-right: 0;
+}
+.t-block ul{
+  list-style: none;
+  padding-left: 16px;
+}
+.faq-item ul{
+  list-style: none;
+  padding-left: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+.t-block ul li,
+.faq-item ul li{
+  position: relative;
+  line-height: 1.95rem;
+  margin-bottom: 0.6rem;
+}
+.t-block ul li:before,
+.faq-item ul li:before{
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #1f7ead;
+  position: absolute;
+  top: 0.75rem;
+  left: -14px;
+}
+.faq-item ul ul ul>li:before{
+  content: '-';
+  background: none;
+  top: 0rem;
+}
+.t-block ul li strong{
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.t-block ul li strong {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.t-block .table_text td {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  vertical-align: top;
+}
+
+.t-block .note {
+  line-height: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.t-block p.p_mb {
+  margin-bottom: 1.75rem;
+}
+
+.t-block p.fixed-height {
+  min-height: 9.25rem
+}
+
+@media screen and (min-width: 1450px) {
+  .t-block .note {
+    line-height: 1.2rem;
+    font-size: 0.85rem;
+  }
+}
+
+.p-block {
+  width: 100%;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.p-block p {
+  color: #4a4a4a;
+  font-size: 1.14rem;
+  line-height: 1.85rem;
+  margin-bottom: 16px;
+}
+
+.p-block ul {
+  list-style: none;
+  padding-left: 16px;
+}
+
+.p-block ul li {
+  position: relative;
+  font-size: 1.14rem;
+  line-height: 1.95rem;
+  margin-bottom: 0.6rem;
+  list-style: none;
+  color: #4a4a4a;
+}
+
+.p-block ul li:before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #4a4a4a;
+  position: absolute;
+  top: 0.75rem;
+  left: -14px;
+}
+
+.p-block h3 {
+  color: #4a4a4a;
+  font-size: 1.28rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  line-height: 1.7rem;
+  text-transform: uppercase;
+  margin: 0 0 25px;
+}
+
+.p-block h4 {
+  color: #4a4a4a;
+  font-size: 1.14rem;
+  line-height: 1.57rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 15px;
+}
+
+.t-block.t-block_without-mb {
+  margin-bottom: 0;
+}
+
+.t-block .article__title {
+  font-size: 2.9rem;
+  line-height: 3.1rem;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.t-block_invert-color {
+  background: #64686a;
+  color: #fff;
+}
+
+.t-block_invert-color h3,
+.t-block_invert-color p {
+  color: #fff;
+}
+
+.t-block_invert-color ul li {
+  margin-bottom: 1.2rem;
+}
+
+.t-block_invert-color ul li::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  top: 0.85rem;
+  left: -14px;
+}

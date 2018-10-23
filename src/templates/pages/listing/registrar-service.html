@@ -1,0 +1,97 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}BlockSettle | Registrar Service{% endblock %}
+
+{% block content %}
+<section class="top-section">
+    <div class="top-section_wrap">
+        <div class="container">
+            <h1>Registrar Service</h1>
+            <p>BlockSettle offers a&nbsp;secure and cost-effective method of&nbsp;issuing representations of&nbsp;real-world
+                assets on&nbsp;the blockchain in&nbsp;the form of&nbsp;tokens. It&nbsp;offers an&nbsp;alternative to&nbsp;the
+                expensive and time-consuming task of&nbsp;processing instrument transfer requests by&nbsp;issuing
+                blockchain tokens to&nbsp;the instrument owner as&nbsp;representations of&nbsp;their holdings.
+                Token-holders can receive all the benefits of&nbsp;direct instrument ownership while being able to&nbsp;take
+                advantage of&nbsp;real-time settlements.
+            </p>
+            <a href="/listing/private-market">Private Market </span></a>
+        </div>
+    </div>
+</section>
+
+<div class='page-content registration-service-page'>
+    <div class="container">
+        <div class="row t-blocks_wrap">
+            <div class="col-xs-6">
+                <div class="t-block t-block_m height-fix">
+                    <h3>NEW ISSUES</h3>
+                    <p>For new issues, the process begins when a company or individual who wishes to issue existing
+                        instruments on the bitcoin blockchain contacts BlockSettle.</p>
+                    <p>BlockSettle works with the sponsor and sets up a Special Purpose Vehicle (SPV) in Sweden.
+                        The SPV structure will allow for harmonized handling of the share registry so that the target
+                        investment can be based anywhere globally. The SPV outsources the maintenance of the share
+                        register to BlockSettle who issues representations in the form of tokens on the bitcoin
+                        blockchain. The Articles of Association of the SPV will be tailored to allow shares to be freely
+                        transferable and limits the scope of the business to only holding target company shares.</p>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="t-block">
+                    <h3>DOCUMENTS</h3>
+                    <div class="">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td><span class="vertical_middle">BlockSettle Overview</span></td>
+                                <td><a href="{{ env.FILE_PRIVATE_MARKET_OVERVIEW }}"
+                                       target="_blank"
+                                       class="js-track-activity download-btn_pdf vertical_middle"
+                                       hs-id="000002736659"></a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="vertical_middle">BlockSettle Legal Memo</span></td>
+                                <td><a href="{{ env.FILE_PRIVATE_MARKET_MEMO }}"
+                                       target="_blank"
+                                       class="js-track-activity download-btn_pdf vertical_middle"
+                                       hs-id="000002736661"></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="t-block">
+                    <h3>LISTING REQUIREMENTS</h3>
+                    <ul>
+                        <li>Business must be of interest to holders of bitcoin</li>
+                        <li>The offering must be structured through the designated SPV structure</li>
+                        <li>No less than 10% of the target company’s fully diluted float of shares shall be held in the
+                            SPV
+                        </li>
+                        <li>Nominate 3 people to comprise the board of directors</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="schedule_wrap schedule_wrap-s">
+            <h3>WHY BSAB SHOULD BE&nbsp;YOUR REGISTRAR</h3>
+            <ul>
+                <li>The service allows for an automated administration of share registry updates enabling companies to
+                    focus on their core business
+                </li>
+                <li>Shares are held in the owner’s name on the legal register in a reputable jurisdiction (Sweden) with
+                    strong investor protections
+                </li>
+                <li>Reach a wide range of global investors to access the liquidity you require as a shareholder</li>
+                <li>Build and maintain investor loyalty with leading secondary market access</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+
+
+

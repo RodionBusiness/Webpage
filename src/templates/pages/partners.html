@@ -1,0 +1,112 @@
+{% extends "layouts/layout.html" %} {% block title %}BlockSettle | Partners{% endblock %} {% block content %}
+<section class="top-section">
+  <div class="top-section_wrap">
+    <div class="container">
+      <h1>Partners</h1>
+      <p>Our partners are leading service providers within their respective fields.</p>
+    </div>
+  </div>
+</section>
+
+<div class='page-content listings'>
+  <div class="container partners">
+    <div class="row t-blocks_wrap t-blocks_wrap--1st-row">
+      <div class="col-sm-4 col-md-4">
+        <a href="{{ env.PARTNER_CELER }}" target="_blank"
+           class="js-track-activity t-block__link"
+           hs-id="000002741001">
+          <div class="t-block">
+            <div class="logo celer"></div>
+            <div class="main-block">
+              <h5 class="l-title">Celer</h5>
+              <p class="l-text">
+                Celer Technologies is a leading provider of multi-dealer trading technology solutions to banks,
+                brokers, buy-side, ECNs and trading venues. Celer Tech provides a wide range of pricing,
+                execution and allocation functionalities that can be customized to meet an individual
+                client's requirements.
+              </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-4 col-md-4">
+          <a href="{{ env.PARTNER_NAVOHA }}" target="_blank"
+             class="js-track-activity t-block__link"
+             hs-id="000002739582">
+            <div class="t-block">
+              <div class="logo genoa"></div>
+              <div class="main-block">
+                <h5 class="l-title">Genoa</h5>
+                <p class="l-text">
+                  Genoa.io Ltd. possess a wealth of domain experience covering Trading, Risk Management,
+                  Operations and Technology. This experience is directed to provide cost effective,
+                  adaptable and robust technology solutions.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-4 col-md-4">
+          <a href="{{ env.PARTNER_BT_ARMORY }}" target="_blank"
+             class="js-track-activity t-block__link"
+             hs-id="000002741002">
+            <div class="t-block">
+              <div class="logo armory"></div>
+              <div class="main-block">
+                <h5 class="l-title">Bitcoin Armory</h5>
+                <p class="l-text">
+                  Armory is a full-featured Bitcoin client, offering a dozen innovative features not found
+                  in any other client software. Armory has no independent networking components built in.
+                  Instead, it relies on the Satoshi client to securely connect to peers, validate blockchain
+                  data, and broadcast transactions.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row t-blocks_wrap t-blocks_wrap--2nd-row">
+        <div class='col-sm-2 col-md-2'></div>
+
+        <div class="col-sm-4 col-md-4">
+          <a href="{{ env.PARTNER_LHV_URL }}" target="_blank"
+             class="js-track-activity t-block__link"
+             hs-id="000002739583">
+            <div class="t-block">
+              <div class="logo lhv"></div>
+              <div class="main-block">
+                <h5 class="l-title">LHV</h5>
+                <p class="l-text">
+                  LHV is an Estonian banking and financial services company headquartered in Tallinn. LHV employs approximately 300 people
+                  and serves more than 100,000 clients. Known for its innovative services, LHV has been identified as a partner in the virtual
+                  E-residency of Estonia program.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-4 col-md-4">
+          <a href="{{ env.PARTNER_VINGE_URL }}" target="_blank"
+             class="js-track-activity t-block__link"
+             hs-id="000002739584">
+            <div class="t-block">
+              <div class="logo vinge"></div>
+              <div class="main-block">
+                <h5 class="l-title">Vinge</h5>
+                <p class="l-text">
+                  Vinge is one of Sweden's premier law firms. A full-service firm with approximately 450 employees, Vinge has extensive experience in working on the global market, with predominantly international mandates. BlockSettle is part of Vinge Growth, a firm-wide initiative supporting selected entrepreneurs from an early phase.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class='col-sm-2 col-md-2'></div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}

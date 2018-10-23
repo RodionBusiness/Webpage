@@ -1,0 +1,138 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}BlockSettle | Terminal{% endblock %}
+
+{% block content %}
+<section class="top-section">
+  <div class="top-section_wrap">
+    <div class="container">
+      <h1>The BlockSettle Terminal</h1>
+      <p>Our flagship platform merges sophisticated key management tools with real-time access to&nbsp;markets</p>
+      <a href='/terminal/downloads'>Downloads</span></a>
+    </div>
+  </div>
+</section>
+
+<div class="page-content terminal-page" itemscope itemtype="http://schema.org/ImageGallery">
+  <div class="container">
+    <!-- Key Management -->
+    <div class="row tr-striped flex-block">
+      <div class="flex-col-1 col-xs-push-1">
+        <div class="tr-block">
+          <h3>Key Management</h3>
+          <p>Users generate and store their own private keys and have the option of signing transactions locally, remotely, or offline.</p>
+        </div>
+      </div>
+      <div class="flex-col-1 col-xs-push-1">
+        <div class="terminal-img">
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="${ require(`assets/images/terminal/terminal_key_management.png`) }"
+                 itemprop="contentUrl" data-size="1440x900">
+                  <img src="~assets/images/terminal/terminal_key_management_675.png"
+                       itemprop="thumbnail" alt='BlockSettle Terminal Key Management' />
+              </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Request-for-Quote (RFQ) -->
+    <div class="row tr-striped flex-block">
+      <div class="flex-col-1">
+        <div class="terminal-img">
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="${ require(`assets/images/terminal/terminal_request_for_quote.png`) }"
+                 itemprop="contentUrl" data-size="1440x900">
+                  <img src="~assets/images/terminal/terminal_request_for_quote-675.png"
+                       itemprop="thumbnail" alt='BlockSettle Terminal Request-for-Quote (RFQ)' />
+              </a>
+          </figure>
+        </div>
+      </div>
+      <div class="flex-col-1">
+        <div class="tr-block">
+          <h3>Request-for-Quote (RFQ)</h3>
+          <p>Initiate a negotiation process by submitting a request-for-quote to our network of participants.</p>
+          <p class="second-paragraph">Experience the collateral efficiencies and market integrity improvements offered by real-time settlement.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Responsive Quotes -->
+    <div class="row tr-striped flex-block">
+      <div class="flex-col-1 col-xs-push-1">
+        <div class="tr-block">
+          <h3>Responsive Quotes</h3>
+          <p>Vast opportunities to respond to offer responsive quotes to a highly diverse group of participants.</p>
+          <p class="second-paragraph">Automate your responsive quotes and settlement executions with our diverse set of tools.</p>
+        </div>
+      </div>
+      <div class="flex-col-1 col-xs-push-1">
+        <div class="terminal-img">
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="${ require('assets/images/terminal/terminal_responsive_quotes.png') }"
+                 itemprop="contentUrl" data-size="1440x900">
+                  <img src="~assets/images/terminal/terminal_responsive_quotes-675.png"
+                       itemprop="thumbnail" alt='BlockSettle Terminal Request-for-Quote (RFQ)' />
+              </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Asset Management -->
+    <div class="row tr-striped flex-block">
+      <div class="flex-col-1 col-xs-push-1">
+        <div class="terminal-img">
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="${ require('assets/images/terminal/terminal_asset_management.png') }"
+                 itemprop="contentUrl" data-size="1440x900">
+                  <img src="~assets/images/terminal/terminal_asset_management_675.png"
+                       itemprop="thumbnail" alt='BlockSettle Terminal Asset Management' />
+              </a>
+          </figure>
+        </div>
+      </div>
+
+      <div class="flex-col-1 col-xs-push-1">
+        <div class="tr-block">
+          <h3>Asset Management</h3>
+          <p>Benefit from being able to manage your bitcoin exposure without relying on third-party custody with a complete view of
+            your portfolio, market data, and ongoing settlement transactions in one clear and easy overview tab.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Network Connectivity -->
+    <div class="row tr-striped flex-block">
+      <div class="flex-col-1">
+        <div class="tr-block">
+          <h3>Network Connectivity</h3>
+          <p>The BlockSettle Terminal implements a client-server architecture where users have the choice of connecting to a local or remote server for bitcoin network connectivity.</p>
+        </div>
+      </div>
+
+      <div class="flex-col-1">
+        <div class="terminal-img">
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="${ require('assets/images/terminal/terminal_network_connectivity.png') }" itemprop="contentUrl" data-size="1440x900">
+              <img src="~assets/images/terminal/terminal_network_connectivity_675.png" itemprop="thumbnail" alt='BlockSettle Terminal Network Connectivity'
+              />
+            </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function() {
+    window.initPhotoSwipeFromDOM('.terminal-page');
+  });
+</script>
+
+{% include 'partials/photoswipepartial.html' %}
+
+{% endblock %}
+

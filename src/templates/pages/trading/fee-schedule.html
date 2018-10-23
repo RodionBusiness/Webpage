@@ -1,0 +1,206 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}BlockSettle | Fee Schedule{% endblock %}
+
+{% block content %}
+  <section class="top-section">
+    <div class="top-section_wrap">
+      <div class="container">
+        <h1>Fee Schedule</h1>
+        <p>BlockSettle aims to maintain competitive fee levels. Fees for trading and settlement at BlockSettle will vary by product and product group and may include, but are not limited to, annual subscription fees, one-off application fees, connectivity fees, trading fees, settlement fees, and market data fees.
+        </p>
+        <a href="/trading/market-model">Market Model </span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class='page-content'>
+    <div class="container">
+      <div class="row t-blocks_wrap">
+        <div class="col-xs-6">
+          <div class="t-block">
+            <h3>Transactions</h3>
+
+            <p class="fixed-twoline">BlockSettle maintains a flat fee level and does not offer volume rebates.</p>
+
+            <div class="row">
+              <div class="col-xs-6">
+                <h4>Spot XBT</h4>
+
+                <div class="table_wrap">
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Buyer</td>
+                      <td>0%</td>
+                    </tr>
+
+                    <tr>
+                      <td>Seller</td>
+                      <td>0.29%</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="col-xs-6">
+                <h4>Spot FX</h4>
+
+                <div class="table_wrap">
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Buyer</td>
+                      <td>0.09%</td>
+                    </tr>
+
+                    <tr>
+                      <td>Seller</td>
+                      <td>0.09%</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="col-xs-12">
+                <h4>Private Market</h4>
+
+                <div class="table_wrap">
+                  <div class="w-100">
+                    <div class="row">
+                      <div class="col-xs-3" style="font-weight: 600;">
+                        Buyer
+                      </div>
+                      <div class="col-xs-9">
+                        0%
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-xs-3" style="font-weight: 600;">
+                        Seller
+                      </div>
+                      <div class="col-xs-9">
+                        0%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-block first-cell-70">
+            <h3>Authentication Address</h3>
+
+            <p>
+              The fee is set dynamically at the point of the Participant submitting a Public Key. The cost to setup an Authentication Address depends on the network fee and the Bitcoin price. Having an Authentication Address is optional.
+            </p>
+
+            <div class="row">
+              <div class="col-xs-6">
+                <h4></h4>
+                <div class="table_wrap">
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Fee</td>
+                      <td class='no-wrap'>Dynamic (max EUR 10)</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-6">
+          <div class="t-block first-cell-70">
+            <h3>Cash Management</h3>
+
+            <p class="fixed-twoline">The following fees are charged by the bank and passed on in full.</p>
+
+            <div class="row">
+              <div class="col-xs-6">
+                <h4>Deposits</h4>
+
+                <div class="table_wrap">
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>EUR</td>
+                      <td>Free</td>
+                    </tr>
+
+                    <tr>
+                      <td>Other Currencies</td>
+                      <td>EUR 10</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="col-xs-6">
+                <h4>Payments</h4>
+
+                <div class="table_wrap">
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>EUR</td>
+                      <td>EUR 1</td>
+                    </tr>
+
+                    <tr>
+                      <td>Other Currencies</td>
+                      <td>EUR 10</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-block first-cell-70">
+            <h3>Application Fee</h3>
+
+            <p>BlockSettle charges a non-refundable Application Fee prior to reviewing any application. The fee comprises the cost of issuing and sending a One-Time Password through the postal service and a EUR 10 account credit to enable an Authentication Address submission. Unsuccessful applications forfeit their fee.</p>
+
+            <div class="row">
+              <div class="col-xs-6">
+                <h4></h4>
+
+                <div class="table_wrap">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>Application Fee</td>
+                        <td>EUR 15</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="t-block">
+            <h3>Blockchain Network Fee</h3>
+
+            <p>Network transaction fees must be sufficiently high to ensure that
+              a transaction is included in the next mined block. The transaction fee is processed by and received by the miner who includes the transaction in a block.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+
+

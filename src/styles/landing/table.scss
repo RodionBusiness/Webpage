@@ -1,0 +1,26 @@
+table.full-description {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+table.full-description td:first-child {
+  width: 30%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  padding-right: 8%;
+  color: #4a4a4a;
+}
+
+table.full-description td:last-child {
+  width: 70%;
+  padding-right: 30%;
+}
+
+table.full-description td {
+  font-size: 1.14rem;
+  line-height: 1.75rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  vertical-align: top;
+}

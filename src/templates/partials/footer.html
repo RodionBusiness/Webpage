@@ -1,0 +1,56 @@
+<footer class="landing-footer">
+    <div class="container landing-footer__content-container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="landing-footer__content-inner">
+            <nav class="landing-footer__nav">
+                <ul class="landing-footer__nav-ul">
+                    <li><span class="title">BlockSettle</span></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/partners">Partners</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+
+                <ul class="landing-footer__nav-ul">
+                    <li><span class="title">Legal</span><li>
+                    <li><a href="/regulation">Regulation</a></li>
+                    <li><a href="/terms-of-use">Terms of Use</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
+
+                <ul class="landing-footer__nav-ul">
+                    <li><span class="title">Agreements</span><li>
+                     <li>
+                        <a href="{{ env.FILE_MARKET_DATA_AGREEMENT }}" target="_blank"
+                           class="js-track-activity"
+                           hs-id="{{ env.FILE_MARKET_DATA_AGREEMENT_TID }}">Market Data Agreement</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ env.FILE_MARKET_PARTICIPANT_AGREEMENT }}" target="_blank"
+                           class="js-track-activity"
+                           hs-id="{{ env.FILE_MARKET_PARTICIPANT_AGREEMENT_TID }}">Participant Agreement</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ env.FILE_DEALING_PARTICIPANT_AGREEMENT }}" target="_blank"
+                           class="js-track-activity"
+                           hs-id="000002734490">Dealer Agreement</a>
+                    </li>               </ul>
+
+                <ul class="landing-footer__nav-ul"></ul>
+            </nav>
+
+            <p class="landing-footer__copyrights">&copy; <span id="date"></span> BlockSettle</p>
+
+            <script>
+              $(function() {
+                $('#date').text(new Date().getFullYear());
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>

@@ -1,0 +1,33 @@
+/*404 page*/
+
+.error-404 {
+  background: url(assets/images/404_bg.jpg) no-repeat center center #152432;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.error-404 .page-content {
+  min-height: calc(100vh - 6rem);
+  display: flex;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+.error .error__num {
+  font-size: 10rem;
+  line-height: 10rem;
+  margin-bottom: 2.5rem;
+  color: #1e7eae;
+  font-weight: bold;
+}
+
+.error__message {
+  font-size: 1.7rem;
+  color: #fff;
+  margin-bottom: 3.7rem;
+}

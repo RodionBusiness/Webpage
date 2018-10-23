@@ -1,0 +1,53 @@
+.table_scroll .tbody {
+  height: 300px;
+}
+
+@media screen and (min-width: 1450px) {
+  .table_scroll .tbody {
+    height: 360px;
+    overflow: hidden;
+  }
+  .scroll-wrapper {
+    height: 360px;
+    overflow: hidden;
+  }
+}
+
+.table_scroll .tbody,
+.table_scroll .thead,
+.table_scroll .tr {
+  width: 100%;
+}
+
+.table_scroll .thead {
+  overflow: hidden;
+  height: 60px;
+  width: 100%;
+}
+
+.table_scroll .td,
+.table_scroll .th {
+  float: left;
+  width: 20%;
+}
+
+.table_scroll .tr {
+  height: auto;
+  overflow: hidden;
+}
+
+.table_scroll .th:last-child {
+  padding-right: 10px;
+}
+
+.scrollbar-inner>.scroll-element .scroll-element_track {
+  background-color: rgba(120, 120, 120, 0.5);
+}
+
+.scrollbar-inner>.scroll-element .scroll-bar {
+  background-color: rgba(120, 120, 120, 0.8);
+}
+
+.scrollbar-inner>.scroll-element:hover .scroll-bar {
+  background-color: rgba(255, 255, 255, 0.8);
+}

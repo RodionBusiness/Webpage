@@ -1,0 +1,125 @@
+.top-section_wrap {
+  background: url(assets/images/index-header-bg.jpg) no-repeat top right #091A2B;
+  min-height: 390px;
+  padding-top: 200px;
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 1;
+}
+
+.top-section_sm .top-section_wrap {
+  min-height: 292px;
+  padding-top: 100px;
+}
+
+@media screen and (min-width: 1450px) {
+  .top-section_wrap {
+    min-height: 390px;
+    padding-bottom: 90px;
+  }
+}
+
+.top-section_wrap .container {
+  position: relative;
+}
+
+.top-section {
+  color: white;
+  z-index: 1;
+}
+
+.top-section h1 {
+  font-size: 3.1rem;
+  line-height: 3.1rem;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 25px;
+}
+
+.top-section p {
+  width: 69%;
+  color: #ffffff;
+  font-size: 1.28rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.top-section ul {
+  margin-bottom: 2rem;
+}
+
+.top-section a {
+  color: white;
+  font-size: 1.32rem;
+  line-height: 1.6rem;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  max-width: 157px;
+  text-align: right;
+}
+
+@media screen and (min-width: 1450px) {
+  .top-section a {
+    right: 30px;
+  }
+}
+
+.top-section a:after {
+  background: url(assets/images/arrow-right.png) no-repeat center center;
+  background-size: contain;
+  content: '';
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  right: -1.8rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.top-section h1 .company-logo {
+  background: url(assets/images/bs_logo.svg) no-repeat left top;
+  background-size: 64px 64px;
+  min-height: 64px;
+  min-width: 64px;
+  display: inline-block;
+  margin-right: 2.5rem;
+}
+
+.top-section.top-section_revert .container {
+  padding-left: 26%;
+}
+
+.top-section.top-section_revert p {
+  width: 100%;
+}
+
+.top-section.top-section_revert a {
+  color: #e8e8e8;
+  font-size: 1.32rem;
+  line-height: 1.6rem;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: auto;
+  max-width: 157px;
+  text-align: right;
+}
+
+.top-section.top-section_revert a:after {
+  background: url(assets/images/arrow-left.png) no-repeat center center;
+  background-size: contain;
+  content: '';
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  left: -1.8rem;
+  right: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

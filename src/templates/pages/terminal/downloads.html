@@ -1,0 +1,62 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}BlockSettle | Downloads{% endblock %}
+
+{% block content %}
+  <section class="top-section">
+    <div class="top-section_wrap">
+      <div class="container">
+        <h1>Downloads</h1>
+        <p>The BlockSettle Terminal implements a client-server architecture where users manage their private keys locally and have the choice of connecting to a local or remote server for network connectivity.</p>
+        <p>The software is open source under MIT and AGPLv3.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class='page-content'>
+    <div class="container">
+      <div class="row t-blocks_wrap flex-block">
+        <div class="col-xs-6">
+          <div class="t-block">
+            <h3>Server client</h3>
+            <p class="p_mb fixed_text">Terminal users are recommended, but not required, to run a server locally. By running your own network node, you are not dependent on third parties for network access. The server can be installed with the following files and require connection to an unpruned Bitcoin Core node.</p>
+            <div class="download-buttons_wrap">
+              <a href="{{ env.DOWNLOAD_WINDOWS_SERVER_VERSION_URL }}"
+                 class="js-track-activity button button-icon button-windows"
+                 hs-id="000002485538">Windows</a>
+              <a href="{{ env.DOWNLOAD_LINUX_SERVER_VERSION_URL }}"
+                 class="js-track-activity button button-icon button-linux"
+                 hs-id="000002485552">Linux</a>
+              <a href="#"
+                 class="js-track-activity button button-icon button-osx"
+                 hs-id="000002485790">OSX</a>
+              <a href='{{ env.SERVER_RELEASES_PAGE }}' target='_blank'
+                 class='js-track-activity github-link'
+                 hs-id="000002485556"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="t-block">
+            <h3>Desktop client</h3>
+            <p class="p_mb fixed_text">The BlockSettle Terminal is a desktop client provided by BlockSettle which enables users to manage their private keys locally while providing real-time market data and order access through the BlockSettle service.</p>
+            <div class="download-buttons_wrap">
+              <a href="{{ env.DOWNLOAD_WINDOWS_VERSION_URL }}"
+                 class="js-track-activity button button-icon button-windows"
+                 hs-id="000002485795">Windows</a>
+              <a href="{{ env.DOWNLOAD_LINUX_VERSION_URL }}"
+                 class="js-track-activity button button-icon button-linux"
+                 hs-id="000002485560">Linux</a>
+              <a href="{{ env.DOWNLOAD_OSX_VERSION_URL }}"
+                 class="js-track-activity button button-icon button-osx"
+                 hs-id="000002485796">OSX</a>
+              <a href='{{ env.TERMINAL_RELEASES_PAGE }}' target='_blank'
+                 class='js-track-activity github-link'
+                 hs-id="000002485562"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

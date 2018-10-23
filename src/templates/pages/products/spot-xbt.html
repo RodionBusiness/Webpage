@@ -1,0 +1,116 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}BlockSettle | Spot XBT{% endblock %}
+
+{% block content %}
+  <section class="top-section">
+    <div class="top-section_wrap">
+      <div class="container">
+        <h1>Spot XBT</h1>
+        <p>Contracts are traded XBT/CCC, where XBT represents bitcoin and CCC a deliverable cash currency held on BlockSettle’s books. The quantity of an order is the amount of XBT or the amount of CCC. The price is CCC, the quote currency, per unit of XBT, the base currency.
+        </p>
+        <a href="/products/spot-fx">Spot FX </span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class='page-content'>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 ">
+          <table class="full-description">
+            <tbody>
+            <tr>
+              <td>Currencies traded</td>
+              <td>XBT, EUR, GBP, JPY, SEK</td>
+            </tr>
+            <tr>
+              <td>Matching Model</td>
+              <td>Request-for-Quote (RFQ)</td>
+            </tr>
+            <tr>
+              <td>Base Currency</td>
+              <td>XBT</td>
+            </tr>
+            <tr>
+              <td>Quote Currency</td>
+              <td>EUR, GBP, JPY, SEK</td>
+            </tr>
+            <tr>
+              <td>Base Currency Lot Size</td>
+              <td>0.00000001</td>
+            </tr>
+            <tr>
+              <td>Quote Currency Lot Size</td>
+              <td>0.01</td>
+            </tr>
+            <tr>
+              <td>Minimum Lot size</td>
+              <td>0.01</td>
+            </tr>
+            <tr>
+              <td>Order Priority</td>
+              <td>Price - Time</td>
+            </tr>
+            <tr>
+              <td>XBT Collateral</td>
+              <td>None, based on on-chain delivery</td>
+            </tr>
+            <tr>
+              <td>Cash Collateral</td>
+              <td>Orders are collateralised by cash deposited with the BlockSettle service</td>
+            </tr>
+            <tr>
+              <td>Trading Schedule</td>
+              <td>24 x 7 x 365</td>
+            </tr>
+            <tr>
+              <td>Blockchain Settlement</td>
+              <td>Bilateral</td>
+            </tr>
+            <tr>
+              <td>XBT Settlement</td>
+              <td>Pay-In / Pay-Out</td>
+            </tr>
+            <tr>
+              <td>Cash Settlement</td>
+              <td>Book-entry settlement upon Settlement Finality</td>
+            </tr>
+            <tr>
+              <td>Settlement Finality</td>
+              <td>Six (6) blockchain confirmations</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="schedule_wrap">
+            <div class="title"><p>Quote Schedule</p></div>
+            <table class="schedule">
+              <tbody>
+              <tr>
+                <td>RFQ Submission</td>
+                <td>00:00.00</td>
+              </tr>
+              <tr>
+                <td>Responsive Quote Period</td>
+                <td>00:00.01 – 00:30.00</td>
+              </tr>
+              <tr>
+                <td>Requester Settlement Execution</td>
+                <td>00:30.01 – 01:00.00</td>
+              </tr>
+                <td>Responder Settlement Execution</td>
+                <td>01:00.01 – </td>
+              </tr>
+              <tr>
+                <td>Settlement</td>
+                <td>Six (6) blockchain confirmations</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+{% endblock %}

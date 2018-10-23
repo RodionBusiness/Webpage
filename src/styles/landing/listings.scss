@@ -1,0 +1,116 @@
+.listings .logo {
+  background: url(assets/images/bs_logo.svg) no-repeat top right #152432;
+  background-size: cover;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.partners .logo {
+  background-size: cover;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.partners .logo.celer {
+  background: url(assets/images/celer_logo.png) no-repeat center center;
+}
+
+.partners .logo.genoa {
+  background: url(assets/images/genoa_logo.png) no-repeat center center #19193F;
+}
+
+.partners .logo.armory {
+  background: url(assets/images/armory_logo.png) no-repeat center center;
+}
+
+.partners .logo.lhv {
+  background: url(assets/images/lhv_logo.svg) no-repeat center center;
+  background-size: contain;
+}
+
+.partners .logo.vinge {
+  background: url(assets/images/vinge_logo.jpg) no-repeat center center;
+  background-size: contain;
+}
+
+.listings .row {
+  display: flex;
+}
+
+.listings .link {
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url(assets/images/plus.png) no-repeat center #565a5c;
+  cursor: pointer;
+}
+
+.listings .t-block__link {
+  display: flex;
+  flex-direction: column;
+}
+
+.listings .t-block__link * {
+  text-decoration: none;
+}
+
+.listings .t-block__link:hover,
+.listings .t-block__link:focus,
+.listings .t-block__link:active {
+  text-decoration: none;
+}
+
+.listings .t-block {
+  position: relative;
+  padding: 16px 20px 17px 0px;
+  flex: 1 0 auto;
+}
+
+.listings .t-blocks_wrap>* {
+  display: flex;
+}
+
+.listings .logo.genoa {
+  background-size: 60px auto;
+}
+
+.listings .l-title {
+  font-size: 2rem;
+  color: #81888f;
+  font-weight: 400;
+  margin-top: 24px;
+}
+
+.listings .t-block .logo {
+  left: 1.75rem;
+  top: 1.75rem;
+}
+
+.listings .l-text {
+  font-size: 1rem;
+  color: #81888f;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.listings .main-block {
+  padding-left: calc(64px + 1.75rem + 1.75rem);
+  padding-right: 1.75rem;
+}
+
+.listings .t-blocks_wrap+.t-blocks_wrap {
+  margin-top: 0;
+}
+
+.listings {
+  min-height: 532px;
+}

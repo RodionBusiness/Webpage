@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>BlockSettle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link href="/landing/css/vendor.css" rel="stylesheet" />
+    <link href="/landing/css/landing.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <script src="/landing/js/vendor.js"></script>
+    <script src="/landing/js/landing.js"></script>
+  </head>
+
+  <body>
+    <main class="{% block mytitle %}{% endblock %} error-404">
+      {% include '../partials/header.html' %}
+      {% block content %}{% endblock %}
+    </main>
+
+    {% include '../partials/footer.html' %}
+
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/395124.js"></script>
+  </body>
+</html>

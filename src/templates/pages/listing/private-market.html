@@ -1,0 +1,60 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}BlockSettle | Private Market{% endblock %}
+
+{% block content %}
+<section class="top-section">
+    <div class="top-section_wrap">
+        <div class="container">
+            <h1>Private Market</h1>
+            <p>BlockSettle offers a Private Market for all tokenized assets over which we act as registrar.
+              As a Market Participant of BlockSettle you are able to transact directly with other
+              Participants where matching and delivery of tokenized assets versus bitcoin occur directly
+              between Participants.</p>
+            <a href='/listing/registrar-service'>Registrar Service</span></a>
+        </div>
+    </div>
+</section>
+
+<div class='page-content'>
+    <div class="container">
+        <div class="row t-blocks_wrap flex-block">
+            <div class="col-xs-6">
+                <div class="t-block t-block_m">
+                    <h3>DELIVERY VERSUS PAYMENT (DVP)</h3>
+                    <p>The BSAB System for settlement aims to guarantee Participants a final and irrevocable
+                        settlement through Delivery versus payment (DVP). This means, amongst other things, that no
+                        capital risk will arise for Participants during settlement, in other words, no Participant risks
+                        delivering to another Participant without receiving payment. Settlements are made on a gross
+                        basis in real-time by means of atomic coinjoin settlement.</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="t-block t-block_m">
+                    <h3>AUTOMATIC DATA PROCESSING</h3>
+                    <p>BlockSettle creates a register for each SPV in the BlockSettle system. For account balances,
+                        BlockSettle issues tokens on the bitcoin blockchain and distributes them to the account holder.
+                        All account updates concerning the account will be executed by the Participant by means of
+                        assigning specific UTXOs to its trade counterpart in exchange for bitcoin in a coinjoin
+                        transaction. Once the transaction is mined six blocks deep, BlockSettle updates the share
+                        registry.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="schedule_wrap schedule_wrap-s">
+            <h3>Why settle through BlockSettle</h3>
+            <ul>
+                <li>Access to a liquid secondary market</li>
+                <li>Global participant base</li>
+                <li>Real-time Delivery-versus-Payment</li>
+                <li>All activities are entirely based on automatic data processing</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+

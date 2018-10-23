@@ -1,0 +1,84 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}BlockSettle | Market Model{% endblock %}
+
+{% block content %}
+  <section class="top-section">
+    <div class="top-section_wrap">
+      <div class="container">
+        <h1>Market Model</h1>
+        <p>BlockSettle operates a multi-dealer trading network which offers Request-For-Quote (RFQ) order matching and real-time bilateral settlement between the parties to a trade.
+        </p>
+        <p>Price discovery is conducted through a RFQ negotiation process initiated by a participant. The RFQ acts as a non-binding
+        solicitation for a quote and provides the basic terms for a responding participant to formulate a response to the requesting
+        participant.</p>
+        <p>All products are settled immediately.</p>
+        <a href="/trading/participants">Participants </span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class='page-content'>
+    <div class="container">
+      <div class="row t-blocks_wrap">
+        <div class="col-xs-6">
+          <div class="t-block">
+            <h3>Matching</h3>
+            <p>Price discovery is conducted through a Request-For-Quote (RFQ) negotiation process initiated by a BlockSettle participant. The RFQ acts as a non-binding solicitation for a quote and provides the basic terms for the dealer to formulate a quote to the requesting participant. The negotiation process is as follows:</p>
+            <ul>
+              <li>RFQs are submitted as an electronic notification sent to the BlockSettle system expressing interest in a specific product, for a specific size.</li>
+              <li>In response to an RFQ, an RFQ notification is disseminated to all Dealing Participants alerting them to the existence of Participant interest.</li>
+              <li>During the response period, Dealing Participants may submit, modify or cancel quotes.</li>
+              <li>Once the response period is concluded, the most competitive quote is presented together with the details relating to the match for the requesting Participants consideration.</li>
+            </ul>
+          </div>
+          <div class="t-block">
+            <h3>Instrument Type Overview</h3>
+            <p>BlockSettle will initially offer matching in these product types:</p>
+            <ul>
+              <li><strong>Spot XBT</strong>RFQ between a blockchain asset (bitcoin) and a cash currency</li>
+              <li><strong>Spot FX</strong>RFQ between two cash currencies</li>
+              <li><strong>Private Market</strong>RFQ between a blockchain asset (bitcoin) and a real world asset which has been issued as a coloured coin on the bitcoin blockchain</li>
+            </ul>
+          </div>
+          <div class="t-block">
+            <h3>Trading Schedule</h3>
+            <p>The service is available 24 x 7 x 365</p>
+          </div>
+          <div class="t-block">
+            <h3>Dealing</h3>
+            <p>BlockSettle encourages participants to actively formulate responsive quotes in response to trading interest. Any BlockSettle participant can formulate responsive quotes in Spot FX and Private Market products. For Spot XBT products, participants need to apply for dealing status as a higher level of requirement is placed on such users.</p>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="t-block">
+            <h3>Segregation and Collateral</h3>
+            <p>BlockSettle offers &laquo;best in class&raquo; segregation for participants who want to limit exposure towards other participants and the service itself.</p>
+            <p>Participants are required to maintain custody over their blockchain assets at all times. There is no possibility for the participant to post, pledge or lodge blockchain assets with BlockSettle.</p>
+            <p>Participants are required to deposit cash into a designated bank account where BlockSettle holds the balances as book-entries on behalf of Participants on an aggregated basis. Participant funds are held segregated from BlockSettle’s company funds.</p>
+            <p>No advanced account types exist for Participants where there is counterparty risk between the participant and BlockSettle.</p>
+          </div>
+          <div class="t-block">
+            <h3>Financial Integrity</h3>
+            <p>The financial integrity of the service maintained by requiring orders to be validated against delivery capacity ahead of order entry, or alternatively, against on-chain settlement execution prior to book-entry updates.</p>
+            <ul>
+              <li>In the case of Spot XBT products, reserving cash balances offered as payment ahead of order entry and only releasing reserved balances when probabilistic blockchain settlement has occurred</li>
+              <li>In the case of Spot FX products, reserving cash balances offered as payment ahead of order entry and only releasing reserved balances when both counterparties agree to the basic terms of the trade</li>
+              <li>In the case of Private Markets, requiring the atomic coinjoin transaction to be constructed in such a way that both parties demonstrate delivery capacity ahead of applying their private keys to the settlement transaction</li>
+            </ul>
+          </div>
+          <div class="t-block">
+            <h3>Settlement</h3>
+            <p>Settlement takes place on a gross basis, trade-by-trade, at the point of execution. The principle &laquo;delivery-versus-payment&raquo; (DvP) applies to all trades.</p>
+            <p>Cash settlement is conducted across BlockSettle&rsquo;s books where ownership is transferred via book-entry.</p>
+            <p>Blockchain settlement is conducted directly between the participants, independent of BlockSettle.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+
+

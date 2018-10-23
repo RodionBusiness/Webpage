@@ -1,0 +1,55 @@
+#main-section {
+  background: url(assets/images/index-header-bg.jpg) no-repeat top right #091A2B;
+  margin-bottom: 70px;
+  width: 100%;
+}
+
+#main-section .main-section_bg {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+#main-section h1 {
+  margin-bottom: 1.7rem;
+}
+
+@media screen and (min-width: 1450px) {
+  #main-section h1 {
+    margin-top: 3.2rem;
+    margin-bottom: 1.7rem;
+  }
+}
+
+#main-section p {
+  color: #ffffff;
+  font-size: 1.3rem;
+  line-height: 2.14rem;
+  margin-bottom: 2.5rem;
+  max-width: 80%;
+}
+
+@media screen and (min-width: 1450px) {
+  #main-section p {
+    margin-bottom: 3.6rem;
+  }
+}
+
+#main-section .bs-ternimal-preview {
+  margin-top: 13px;
+}
+
+@media screen and (min-width: 1366px) {
+  #main-section .bs-ternimal-preview {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #main-section .right-part {
+    margin-bottom: 60px;
+  }
+}
+
+#main-section .right-part {
+  z-index: 1;
+}

@@ -1,0 +1,55 @@
+{% extends "pages/news.html" %}
+
+{% block title %}BlockSettle | News - Terminal Release{% endblock %}
+
+{% block article %}
+
+  <div class="t-block article__block">
+    <h3>BlockSettle launches the world’s first Bitcoin wallet with an integrated order management system</h3>
+
+    <div class="article__data">Malmo, Sweden, {{news['terminalrelease']['fullDate']}}</div>
+
+    <p>
+      BlockSettle, a Swedish blockchain technology company, has today launched its flagship key management tool,
+      the BlockSettle Terminal, and announced that it offers non-custodial trading and settlement in Bitcoin.
+    </p>
+
+    <p>
+      The BlockSettle Terminal is specifically designed to allow participants to remain in control of their
+      Bitcoin balances while enjoying the benefits of an efficient and competitive market structure. The model
+      is built on Bitcoin settlement taking place directly between participants whilst cash settlement takes
+      place across BlockSettle accounts.
+    </p>
+
+    <p>
+      “We are pleased to offer a model built around the participants’ custodianship over their own blockchain assets,
+      coupled with direct access to bilateral matching and settlement. Interested parties are encouraged to apply to
+      become participants with our service.” said Albert Janson, COO, BlockSettle.
+    </p>
+
+    <p>
+      The BlockSettle Terminal is SegWit based and supports automated trading strategies, bespoke security models
+      in relation to local, remote, and offline signing, and relies on the ArmoryDB and Satoshi client for
+      network connectivity.
+    </p>
+
+    <p>
+      “Given that the efficiencies offered by blockchain technologies is built around stakeholder control of the
+      ledger, it’s vital to have the tools to take advantage of this core premise. Our offering showcases the
+      extent of BlockSettle’s service and brings a welcome benchmark which we hope the market will
+      come to appreciate.” said Scott Millar, CEO, BlockSettle.
+    </p>
+
+    <h3>About BlockSettle</h3>
+
+    <p>
+      BlockSettle was established to develop matching and settlement models focused on blockchain ledger technologies.
+    </p>
+
+    <p>
+      BlockSettle offers a network of participants who are matched and settled bilaterally, in real-time, without
+      incurring the risks associated with third-party custodianship over blockchain assets.
+    </p>
+  </div>
+
+{% endblock %}

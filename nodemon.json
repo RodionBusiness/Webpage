@@ -1,0 +1,17 @@
+{
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules"
+  ],
+  "watch": [
+    "./src/templates/data/",
+    "./src/templates/layouts/",
+    "./src/templates/partials/",
+    ".env",
+    ".env.prod",
+    ".env.dev",
+    "webpack.config.js"
+  ],
+  "delay": "1000",
+  "ext": "html"
+}

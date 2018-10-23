@@ -1,0 +1,35 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}BlockSettle | Spot XBT Dealing{% endblock %}
+
+{% block content %}
+  <section class="top-section">
+    <div class="top-section_wrap">
+      <div class="container">
+        <h1>Spot XBT Dealing</h1>
+        <p>All Market Participants are free to apply for Spot XBT dealing status.</p>
+        <a href="/trading/fee-schedule">Fee Schedule</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-content spot-dealing-page">
+    <div class="container">
+      <div class="row t-blocks_wrap">
+        <div class="col-sm-12 col-md-12">
+          <div class="t-block">
+          <h3>APPLY FOR SPOT XBT DEALING STATUS</h3>
+            <p>BlockSettle encourages participants to apply for Spot XBT dealing status. Any BlockSettle participant can apply for Spot XBT dealing status and benefit from formulating responsive quotes in response to trading interest.</p>
+          </div>
+          <div class="schedule_wrap schedule_wrap-s schedule_wrap-wt">
+            <p class="bold-text">Minimum Fill-to-Quote ratio: 85%</p>
+            <p class="bold-text">Minimum Account Balance: EUR 5,000 or equivalent</p>
+            <p>Fill-to-Quote ratio is determined by the ratio of executed on-chain settlement transactions where the dealer submitted the most competitive quote</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

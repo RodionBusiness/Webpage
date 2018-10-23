@@ -1,0 +1,63 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}BlockSettle | Participation{% endblock %}
+
+{% block content %}
+  <section class="top-section">
+    <div class="top-section_wrap">
+      <div class="container">
+        <h1>Participants</h1>
+        <p>Any participant wishing to trade directly at BlockSettle must be admitted as a BlockSettle Participant.</p>
+        <a href="/trading/spot-xbt-dealing">Spot XBT Dealing </span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class='page-content'>
+    <div class="container">
+      <div class="row t-blocks_wrap">
+        <div class="col-xs-6">
+          <div class="t-block">
+            <h3>Market Data Participant</h3>
+            <p>Market Data Participants use our Terminal as a key management tool and have access to our market data.</p>
+            <h6 class='caption caption__with-border'>Requirements</h6>
+            <ul>
+              <li>Create an account in the BlockSettle System</li>
+              <li>Party to the Market Data Agreement</li>
+            </ul>
+          </div>
+          <div class="t-block">
+            <h3>Market Participant</h3>
+            <p>Market Participants are direct participants who can submit Request-For-Quote (RFQ) in all products and formulate responsive quotes in Spot FX and Private Market products.</p>
+            <h6 class='caption caption__with-border'>Requirements</h6>
+            <ul>
+              <li>Non-US tax subject</li>
+              <li>Not a Politically Exposed Person (PEP)</li>
+              <li>Successfully undergo a due diligence review</li>
+              <li>Have technical systems in place which conform with our matching and settlement model requirements</li>
+              <li>Make a minimum initial cash deposit of EUR 1,000 or equivalent in any of the currencies offered</li>
+              <li>Party to the Participant Agreement</li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-xs-6">
+          <div class="t-block">
+            <h3>Dealing Participant</h3>
+            <p>Dealing Participants are participants in the system who, in addition to Market Participants,
+              can formulate responsive quotes to Spot XBT trading interest.</p>
+            <h6 class='caption caption__with-border'>Requirements</h6>
+            <ul>
+              <li>Minimum cash balance of EUR 5,000 or equivalent on account</li>
+              <li>Fill-to-Quote ratio of 85%</li>
+              <li>Party to the Dealing Participant Agreement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+
+

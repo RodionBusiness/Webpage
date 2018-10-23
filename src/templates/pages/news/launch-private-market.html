@@ -1,0 +1,60 @@
+{% extends "pages/news.html" %}
+
+{% block title %}BlockSettle | News - Registrar Service Client{% endblock %}
+
+{% block article %}
+
+  <div class="t-block article__block">
+    <h3>BlockSettle announces the launch of its private market and opens trading in its own share</h3>
+    <div class="article__data">Malmo, Sweden, {{news['launchprivatemarket']['fullDate']}}</div>
+
+    <p>
+      BlockSettle, a Swedish blockchain technology company, today announced the launch of its Private Market,
+      a fully automated issuance and settlement service for Private Limited Companies where delivery and
+      payment (DvP) is based on atomic Bitcoin swaps.
+    </p>
+
+    <p>
+      The company further announced that it will list its own share as the first actionable use-case and
+      proof-of-concept for the service, through the investors’ holding company BlockSettle Partners AB (Ticker: BLK).
+    </p>
+
+    <p>
+      The Private Market offers a registry model where shares are held in the investor’s name on the legal
+      register while coloured coins are issued as representations of the shares on the Bitcoin blockchain.
+      The coloured coins are traded against Bitcoin in atomic coinjoin transactions directly between participants,
+      where the legal register is automatically updated based on the settlement of transactions.
+    </p>
+
+    <p>
+      “BlockSettle is pleased with the efficiencies our Private Market brings to all stakeholders.
+      Investors will have real-time access to liquidity while benefiting from a transparent and robust
+      legal structure. Companies will enjoy automated administration of share registry updates and
+      can focus on their core businesses”, says Albert Janson, COO, BlockSettle.
+    </p>
+
+    <p>
+      When both share representations and the consideration offered as payment reside on the same
+      public ledger, it becomes possible to effect real-time settlement through the execution of an
+      atomic swap utilising the BlockSettle Terminal.
+    </p>
+
+    <p>
+      “We are pleased to offer a model where Delivery versus Payment (DvP) happens at the point of
+      execution directly between the participants to the trade and where we monitor transactions on the
+      public blockchain and verify settlement finality.” said Scott Millar, CEO, BlockSettle.
+    </p>
+
+    <h3>ABOUT BLOCKSETTLE</h3>
+
+    <p>
+      BlockSettle was established to develop matching and settlement models focused on blockchain ledger technologies.
+    </p>
+
+    <p>
+      BlockSettle offers a network of participants who are matched and settled bilaterally, in real-time,
+      without incurring the risks associated with third-party custodianship over blockchain assets.
+    </p>
+  </div>
+
+{% endblock %}

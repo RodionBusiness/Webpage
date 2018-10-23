@@ -1,0 +1,128 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}BlockSettle | Listings - BlockSettle{% endblock %}
+
+{% block content %}
+<section class="top-section">
+    <div class="top-section_wrap">
+        <div class="container">
+            <h1><span class='company-logo'></span>BlockSettle</h1>
+            <p>BlockSettle is a Swedish Payment Service Provider offering matching and settlement infrastructure for
+                blockchains. It operates a multi-dealer trading network which offers request-for-quote order matching
+                and real-time bilateral settlement between the counterparties to a trade.
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class='page-content'>
+    <div class="container">
+        <div class="row t-blocks_wrap">
+            <div class="col-xs-6">
+                <div class="t-block">
+                    <h3>WEBPAGE</h3>
+                    <a class='webpage-link' href='http://www.blocksettle.com'>www.blocksettle.com</a>
+                </div>
+                <div class="t-block t-block_summary">
+                    <h3>DOCUMENTS</h3>
+                    <div class="table_wrap">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td><span class="vertical_middle">Articles of Association</span></td>
+                                <td><a href="{{ env.FILE_ARTICLES_OF_ASSOCIATIONS }}"
+                                       target="_blank"
+                                       class="js-track-activity download-btn_pdf vertical_middle"
+                                       hs-id="000002734291"></a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="vertical_middle">Certificate of Registration</span></td>
+                                <td><a href="{{ env.FILE_CERTIFICATE_OF_REGISTRATION }}"
+                                       target="_blank"
+                                       class="js-track-activity download-btn_pdf vertical_middle"
+                                       hs-id="000002740963"></a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="vertical_middle">EGM 2017-10-11 #1</span></td>
+                                <td><a href="{{ env.FILE_EGM_1 }}"
+                                       target="_blank"
+                                       class="js-track-activity download-btn_pdf vertical_middle"
+                                       hs-id="000002734499"></a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="vertical_middle">EGM 2017-10-11 #2</span></td>
+                                <td><a href="{{ env.FILE_EGM_2 }}"
+                                       target="_blank"
+                                       class="js-track-activity download-btn_pdf vertical_middle"
+                                       hs-id="000002735924"></a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="vertical_middle">Registrar Agreement</span></td>
+                                <td><a href="{{ env.FILE_REGISTRAR_AGREEMENT }}"
+                                       target="_blank"
+                                       class="js-track-activity download-btn_pdf vertical_middle"
+                                       hs-id="000002735925"></a></td>
+                            </tr>
+                            <tr>
+                                <td><span class="vertical_middle">Investment Agreement</span></td>
+                                <td><a href="{{ env.FILE_INVESTMENT_AGREEMENT }}"
+                                       target="_blank"
+                                       class="js-track-activity download-btn_pdf vertical_middle"
+                                       hs-id="000002740982"></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="t-block t-block_summary">
+                    <h3>SUMMARY</h3>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <div class="table_wrap">
+                                <table>
+                                    <tbody>
+                                    <tr>
+                                        <td>Outstanding BSAB shares</td>
+                                        <td>7 149 600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BSAB Shares held by the SPV</td>
+                                        <td>2 352 780</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Percentage held by SPV</td>
+                                        <td>32.91%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shares issued by the SPV</td>
+                                        <td>470 556</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Conversion ratio</td>
+                                        <td>1:5</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <table>
+                                    <tbody>
+                                    <tr>
+                                        <td>Genesis Address</td>
+                                        <td>3QDxY9aCeaf3wSMfKLVqCnePvasFZdZtgz</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+

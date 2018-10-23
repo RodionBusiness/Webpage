@@ -1,0 +1,42 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+  <section class="top-section top-section_sm">
+    <div class="top-section_wrap">
+      <div class="container">
+        <h1>News</h1>
+      </div>
+    </div>
+  </section>
+
+  <div class='page-content article'>
+    <div class="container">
+      <div class="row t-blocks_wrap">
+        <div class="col-sm-8 col-md-8">
+
+        {% block article %}{% endblock %}
+
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <div class="news">
+            <h3 class="block__title">RECENT NEWS</h3>
+
+            <div class="item active">
+              {% for key, item in news %}
+                <div class="news-item">
+                  <div class="news__data">{{item['date']}}</div>
+                  <a class="news__title" href="{{item['href']}}">{{item['title']}}</a>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+
+

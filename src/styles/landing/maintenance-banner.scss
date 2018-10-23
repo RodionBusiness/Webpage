@@ -1,0 +1,27 @@
+.maintenance-banner {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 999;
+  display: none;
+
+  background-color: #0c1b28;
+
+  *, a {
+    color: white;
+  }
+
+  &-dismiss {
+    font-size: 32px;
+    cursor: pointer;
+    padding: 1em;
+  }
+
+  &-info {
+    padding: 1em 2em;
+  }
+
+  &-title {
+    color: white;
+  }
+}

@@ -1,0 +1,83 @@
+.terminal-img {
+  width: 100%;
+}
+
+.terminal-page.page-content {
+  padding-top: 30px;
+  overflow: inherit;
+}
+
+#main-section.terminal-page {
+  margin-bottom: 0;
+}
+
+.terminal-page .a-block {
+  display: flex;
+  padding: 0;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.terminal-page .main-idea {
+  width: 13rem;
+}
+
+.terminal-page {
+  background: #f4f4f4;
+}
+
+.terminal-page .tr-striped {
+  background: white;
+}
+
+.terminal-page .a-block {
+  padding-top: 2.8rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.terminal-page .second-paragraph {
+  padding-top: 10px;
+}
+
+.terminal-page .second-row {
+  padding-top: 4.286rem;
+}
+
+.spot-dealing-page .bold-text {
+  font-weight: 600;
+}
+
+.tr-block {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.terminal-page .tr-block h3 {
+  font-size: 1.78rem;
+  margin-bottom: 2rem;
+}
+
+.terminal-page .tr-block {
+  line-height: 1.9rem;
+  padding: 0 18%;
+}
+
+.github-link {
+  display: inline-block;
+  min-height: 32px;
+  background: url(assets/images/github_icon.png) no-repeat left center;
+  background-size: 32px 32px;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.download-buttons_wrap {
+  padding-top: 1.8rem;
+  padding-bottom: 0.5rem;
+}

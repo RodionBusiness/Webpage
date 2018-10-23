@@ -1,0 +1,601 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}BlockSettle | FAQ{% endblock %}
+
+{% block content %}
+
+<section class="top-section top-section_sm">
+  <div class="top-section_wrap">
+    <div class="container">
+      <h1>FAQ</h1>
+      <p>For further questions about our products and services, please review our Getting Started Guide, Trading Procedures,
+        and Product Specifications.</p>
+    </div>
+  </div>
+</section>
+
+<div class="page-content faq-page">
+  <div class="container">
+    <div class="row flex-block">
+      <div class="sidebar-nav col-xs-4 col-sm-3 col-md-3">
+        <ul class='faq-categories'>
+          <li>
+            <a href="about" class='selected'>About</a>
+          </li>
+          <li>
+            <a href="products">Products</a>
+          </li>
+          <li>
+            <a href="getting-started">Getting Started</a>
+          </li>
+          <li>
+            <a href="terminology">Terminology</a>
+          </li>
+          <li>
+            <a href="security">Security</a>
+          </li>
+          <li>
+            <a href="trading">Trading</a>
+          </li>
+          <li>
+            <a href="fees">Fees</a>
+          </li>
+          <li>
+            <a href="advanced">Advanced</a>
+          </li>
+          <li>
+            <a href="validations">Validations</a>
+          </li>
+          <li>
+            <a href="private-market">Private Market</a>
+          </li>
+          <li>
+            <a href="another">I have another question!</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-xs-8 col-sm-9 col-md-9">
+        <div class="faq-group">
+          <div class="faq-item active" id='about'>
+            <div class="faq-item_wrap">
+              <div>
+                <h4>
+                  About
+                </h4>
+              </div>
+              <div>
+                <h5>Why BlockSettle?</h5>
+                <p>
+                  We believe users should have operational control of their Bitcoins and that the purchase and sale of Bitcoin can be done without relying on third-party custodians.
+                </p>
+
+                <h5>What is BlockSettle?</h5>
+                <p>
+                  BlockSettle is a blockchain company which develops integrated key and order management systems. Its focus is centred on developing
+                  matching and settlement models for distributed ledger systems where the stakeholder controls the private
+                  key.
+                </p>
+
+                <h5>What is the BlockSettle Terminal?</h5>
+                <p>
+                  The BlockSettle Terminal is a sophisticated key management tool with an integrated order management system.
+                </p>
+                <p>
+                  The BlockSettle Terminal offers:
+                </p>
+                <ul>
+                  <li>Private key control, where the signer can be local, remote, or offline</li>
+                  <li>SegWit addresses, native or nested</li>
+                  <li>The option to operate your own node infrastructure</li>
+                </ul>
+
+                <h5>What is BlockSettle’s Market Model?</h5>
+                <p>
+                  BlockSettle operates a multi-dealer trading network which offers request-for-quote (RFQ) order matching and real-time bilateral
+                  settlement.
+                </p>
+                <p>
+                  Price discovery is conducted through an RFQ negotiation process initiated by a participant. The RFQ acts as a non-binding
+                  solicitation for a quote and provides the basic terms for a responder to formulate a response to the requesting
+                  participant.
+                </p>
+                <p>Read more at
+                  <a href="/trading/market-model" target="_blank">Market Model</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id='products'>
+            <div class="faq-item_wrap">
+              <div>
+                <h4>
+                  Products
+                </h4>
+              </div>
+              <div>
+                <h5>Can I trade digital currencies other than Bitcoin?</h5>
+                <p>
+                  BlockSettle’s model is intended to be universally applicable to stakeholder operated accounting ledgers. With that said,
+                  we don’t foresee that we will offer trading or wallets for other distributed asset ledgers in the near
+                  term.
+                </p>
+
+                <h5>What currencies and which products can I trade?</h5>
+                <p>
+                  BlockSettle will initially offer matching in these product types:
+                </p>
+                <ul>
+                  <li>
+                    <b>Spot FX</b> RFQ between two Cash Currencies</li>
+                  <li>
+                    <b>Spot XBT</b> RFQ between Bitcoin and a Cash Currency</li>
+                  <li>
+                    <b>Private Market</b> RFQ between Bitcoin and a real-world asset which has been issued as a coloured coin
+                    on the Bitcoin Blockchain</li>
+                </ul>
+                <p>
+                  BlockSettle will initially offer matching in the following currencies:
+                </p>
+                <ul>
+                  <li>EUR, GBP, SEK, JPY</li>
+                </ul>
+
+                <h5>Which currencies can I deposit and withdraw?</h5>
+                <p>
+                  Deposits and withdrawals are available in EUR, GBP, SEK, JPY.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id='getting-started'>
+            <div class="faq-item_wrap">
+              <div>
+                <h4>
+                  Getting Started
+                </h4>
+              </div>
+              <div>
+                <p>
+                  Please see our
+                  <a href="{{ env.FILE_GETTING_STARTED }}" target="_blank"
+                     class="js-track-activity"
+                     hs-id="000002485890"> Getting Started Guide</a>
+                  , available through the resource section on our webpage.
+                </p>
+
+                <h5>Where do I begin?</h5>
+                <p>
+                  Please download our Terminal, read the resources, become acquainted with our software and see if you feel comfortable with
+                  our model. Should you then wish to have access to our network of participants, please begin the onboarding
+                  process by clicking <a href="/pub-registration">register</a>.
+                </p>
+
+                <h5>Who can register with BlockSettle?</h5>
+                <p>
+                  BlockSettle welcomes both Natural Persons and Legal Entities to become Participants.
+                </p>
+                <p>
+                  BlockSettle offers three Participant types:
+                  <b>Market Data Participant</b>,
+                  <b>Market Participant</b>, and
+                  <b>Dealing Participant</b>.</p>
+                <p>
+                  <b>Market Data Participant</b>
+                  <br/>Any user of the BlockSettle Terminal who wants to view our Market Data can create an account with the service provided they
+                  adhere to our Market Data Agreement.
+                </p>
+                <p>
+                  <b>Market Participant</b>
+                  <br/>We welcome Market Data Participants who undergo a due diligence review, have technical systems in place which conform with
+                  BlockSettle’s matching and settlement requirements, satisfy the minimum financial standing requirements with a EUR 1,000
+                  (or equivalent) initial deposit, and are party to our User Agreement.
+                <p>
+                  <b>Dealing Participant</b>
+                  <br/>Market Participants who wish to provide responsive quotes to Spot XBT may apply for Dealing Participant status through the
+                  Client Portal. Dealing Participants are required to hold a minimum cash balance of EUR 5,000 (or equivalent) on a rolling
+                  monthly basis, have a minimum fill-to-quote ratio of 85%, and be party to the Dealing Participant Agreement.
+                </p>
+                <p>
+                  NOTE! BlockSettle is currently unable to offer Market Participant or Dealing Participant status to any natural person or
+                  legal entity considered a US tax subject, a citizen from a restricted location, or considered a PEP (Political
+                  Exposed Person).
+                </p>
+
+                <h5>What differs between the participant groups?</h5>
+                <p>
+                  Market Data Participant register an email with the service to gain access to Terminal market data. Market Participants undergo
+                  a due diligence review to become a participant of our trading network. Dealing Participants are required
+                  to display a minimum of financial standing to be able to formulate responsive quotes in the Spot XBT market.
+                </p>
+
+                <h5>Why do I have to provide my personal information to trade?</h5>
+                <p>
+                  At BlockSettle we take our compliance obligations seriously. All Participants are required to undergo an enhanced due diligence
+                  process in order to be compliant with AML and KYC regulations.
+                </p>
+
+                <h5>What are the options to deposit or withdraw?</h5>
+                <p>
+                  Deposits are initiated by the Participant making a Deposit Request through the Client Portal. Once a Deposit Reference is
+                  generated, we can map the payment to your BlockSettle account as soon as we are notified by our Bank.
+                </p>
+                <p>
+                  Only one withdrawal per day is permitted.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id='terminology'>
+            <div class="faq-item_wrap">
+              <div>
+                <h4>
+                  Terminology
+                </h4>
+              </div>
+              <div>
+                <h5>What is a Root Private Key?</h5>
+                <p>
+                  Our Wallets are Hierarchical Deterministic. Each Wallet has deterministic paths with regards to Private Market shares,
+                  Authentication Address, and general Bitcoin balances. The Root Private key can completely restore all wallets
+                  from their seed regardless of how many addresses or paths they have created. Users are encouraged to create paper
+                  backups of their Root Private Key to help them recover the wallet.
+                </p>
+
+                <h5>What is a One-time Password?</h5>
+                <p>
+                  One-Time Passwords (OTP) are used to verify your identity and communicate securely with BlockSettle. They have no relation
+                  to the private keys which control your Bitcoin balances. The OTP is sent by postal service to each approved
+                  Market Participant. OTPs are entered into the BlockSettle Terminal and protected with a password set by
+                  the Participant.
+                </p>
+
+                <h5>What is an Authentication Address?</h5>
+                <p>
+                  The purpose of the Authentication Address is multiple:
+                </p>
+                <ol type='i'>
+                  <li>It assures BlockSettle that the Authentication Address is controlled by the Participant's Private Key.</li>
+                  <li>It allows participants to have an independent and on-chain validation
+                  that a trade counterpart is indeed a BlockSettle Participant. </li>
+                  <li>It allows for a mutually revocable
+                  authentication scheme where the Participant, as well as BlockSettle, can control the validity of an Authentication
+                  Address. </li>
+                  <li>It allows for the creation of an unlimited amount of settlement addresses which can’t directly
+                  be tied to a specific Participant by their trade counterpart.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id="security">
+            <div class="faq-item_wrap">
+              <div>
+                <h4>
+                  Security
+                </h4>
+              </div>
+              <div>
+                <h5>How do I know my Bitcoins are in safe hands?</h5>
+                <p>
+                  Your Bitcoins are as safe as you keep them.
+                </p>
+                <p>
+                  BlockSettle encourages you to take the necessary precautions to ensure you have backups of your private keys and that you consider the security model around how transactions are signed.
+                </p>
+
+                <h5>How do I backup my Wallet?</h5>
+                <p>
+                  When creating your wallet, you will be encouraged to save a paper backup of your Root Private Key. Keep in mind to save the
+                  backup on a USB (only for this purpose) and/or printing the paper backup and keeping it safe. If you download
+                  the PDF on the computer, please note that the file is unencrypted and that anyone with access to it can
+                  recover your entire wallet.
+                </p>
+                <p>
+                  If you don’t save a paper backup when creating your wallet, you can find your Root private key in the terminal. Go to; Wallets
+                  > Wallet Properties > Backup Wallet > Paper backup. Keep in mind Private keys should be kept private and
+                  secure.
+                  <i>Anyone with a copy of your private key has control of your coins. Our recommendation, have at least one
+                    paper backup!
+                  </i>
+                </p>
+
+                <h5>What security model does BlockSettle employ?</h5>
+                <p>
+                  The BlockSettle Terminal manages Watching-Only wallets. Watching-Only wallets can view the entire history of transactions, generate addresses, and create unsigned transactions. The BlockSettle Signer manages the encrypted signing containers which generate Private Keys, hold Private Keys, and sign transactions.
+                </p>
+                <p>
+                  The BlockSettle Signer can be run in either headless or GUI mode and be operated locally, remotely, or offline. Headless mode means all operations relating to the Signer are conducted through the Terminal. GUI mode means all operations relating to the Signer is launched and controlled separately in the Signer.
+                </p>
+                <p>
+                  The default settings are for the Signer to be installed alongside the Terminal where the Signer runs in headless mode so that all operations are performed from the Terminal. Advanced users and dealers who wish to Auto-Quote and Auto-Sign can consider more advanced key management routines.
+                </p>
+                <p>
+                  See more info on our resources page,
+                  <a href="{{ env.FILE_BLOCKSETTLE_SIGNER }}" target="_blank" class="js-track-activity" hs-id="000003000769">Signer documentation</a>
+                  and
+                  <a href="{{ env.FILE_AUTO_QUOTING }}" target="_blank" class="js-track-activity" hs-id="{{ env.FILE_AUTO_QUOTING_TID }}">Auto-Quoting</a>
+                  documentation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id='trading'>
+            <div class="faq-item_wrap">
+              <div>
+                <h4>
+                  Trading
+                </h4>
+              </div>
+              <div>
+                <h5>Can I automate the formulation of responsive quotes?</h5>
+                <p>
+                  The Terminal allows Dealing Participants to write bespoke scripts which automate responsive quotes for one or more products simultaneously. Use any number of data feeds and market signals to create bespoke and automated trading strategies through user defined formulas.
+                </p>
+                <p>
+                  For more detailed information, please read our
+                  <a href="{{ env.FILE_AUTO_QUOTING }}" target="_blank" class="js-track-activity" hs-id="{{ env.FILE_AUTO_QUOTING_TID }}">Auto-Quoting documentation</a>, available through the resource section on our webpage.
+                </p>
+
+                <h5>Can I automate settlement execution?</h5>
+                <p>
+                  As each Bitcoin related trade requires that both parties apply their private keys to every settlement transaction, BlockSettle
+                  has taken great care to provide a security model suitable for automation for Dealing Participants. Please
+                  read the documentation around Auto-Signing to determine the security model relevant to your own needs:
+                </p>
+                <p>
+                  For more detailed information, please read our
+                  <a href="{{ env.FILE_AUTO_QUOTING }}" target="_blank" class="js-track-activity" hs-id="{{ env.FILE_AUTO_QUOTING_TID }}">Auto-Quoting documentation</a>,
+                  available through the resource section on our webpage.
+                </p>
+
+                <h5>Can I speed up transactions?</h5>
+                <p>
+                  The Terminal supports both Child-Pays-For-Parent (CPFP) and Replace by fee (RBF) fee increases. The Terminal will estimate
+                  a fee/byte so that the transaction has a high probability of being included in the next few blocks.
+                </p>
+
+                <h5>Can I have multiple Authentication Addresses?</h5>
+                <p>
+                  You may have multiple Authentication Addresses. This may be useful for dealers who wish to cycle their Authentication Addresses
+                  to obfuscate counterparty identification.
+                </p>
+
+                <h5>I’m a Market Participant, how do I access the Spot XBT product group?</h5>
+                <p>
+                  To submit a Request-for-Quote in the Spot XBT product group, you are required to have a valid Authentication Address.
+                </p>
+
+                <h5>Why can’t Market Participants formulate responsive quotes in the Spot XBT market?</h5>
+                <p>
+                  Quotes in the Spot XBT market are non-binding and settlement execution is voluntary. This means that both Participants to
+                  a trade needs to sign their half of the settlement transaction (Pay-In or Pay-Out) and broadcast the transaction
+                  to the Bitcoin network. To ensure a fair and orderly market, we place demands on Dealing Participants in
+                  terms of capital levels and professional conduct to guarantee that they fulfil their settlement obligations.
+                  In return, Dealers always act last so that they (i) never need to risk round-tripping a settlement address,
+                  incurring network fees, (ii) and easily can hedge the price offered to a Market Participant.
+                </p>
+
+                <h5>What kind of reporting do you offer?</h5>
+                <p>
+                  Account statements are generated and emailed on a yearly, monthly and active trading day basis.
+                </p>
+                <p>
+                  Custom report generation is available through the Client Portal.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id='fees'>
+            <div class="faq-item_wrap">
+              <div>
+                <h4>
+                  Fees
+                </h4>
+              </div>
+              <div>
+                <h5>What fees do you charge?</h5>
+                <p>
+                  You can find all fees in our
+                  <a href="{{ env.FILE_FEE_SCHEDULE }}" target="_blank"
+                     class="js-track-activity"
+                     hs-id="{{ env.FILE_FEE_SCHEDULE_TID }}"> fee schedule</a>.
+                </p>
+
+                <h5>What pricing method does BlockSettle use?</h5>
+                <p>
+                  BlockSettle implements a cost based accounting method where fees are charged for activities which result in an outlay. Transaction
+                  fees vary by product group and are debited from cash payments.
+                </p>
+                <p>
+                  Note! BlockSettle doesn’t interpose itself between Bitcoin settlements and cannot charge fees on Bitcoin transactions.
+                </p>
+
+                <h5>Why do you charge an onboarding fee?</h5>
+                <p>
+                  For us to onboard a participant, we need to manually review the application, issue a One-Time Password, and send the OTP through the postal service. The onboarding fee covers part of this initial cost. For more information, please see our
+                  <a href="{{ env.FILE_FEE_SCHEDULE }}" target="_blank" class="js-track-activity" hs-id="{{ env.FILE_FEE_SCHEDULE_TID}}">fee schedule</a>.
+                </p>
+
+                <h5>How about Settlement transaction fees?</h5>
+                <p>
+                  BlockSettle uses native SegWit for all settlement transactions.
+                </p>
+                <p>
+                  A common settlement transaction in the Spot XBT product group contains two transactions, the Pay-In and the Pay-Out. The
+                  Pay-In transaction typically contains 1 Input and 2 Outputs, approximately 125 bytes. The Pay-Out transaction
+                  will typically have 1 Input and 1 Output, approximately 85 bytes. The network fee is comparable to that
+                  of depositing and withdrawing a balance from a custodial exchange which has implemented SegWit.
+                </p>
+                <p>
+                  A common settlement transaction in the Private Market is typically 215 bytes in size and paid for in whole by the buyer.
+                </p>
+                <p>
+                  The transaction fee is determined on a fee per byte basis and will be calculated by the Terminal so that a transaction should
+                  be mined within the next two blocks.
+                </p>
+
+                <h5>Why do you charge to setup an Authentication Address?</h5>
+                <p>
+                  BlockSettle processes Authentication Addresses once a day in batch transactions. The Funding transaction is batched with
+                  one (or few) Inputs and many Outputs, resulting in an approximate 40 bytes transaction size. The validation
+                  transaction, where the Participant returns half the balance has 1 Input and 2 Outputs, and is approximately
+                  125 bytes. In addition, Blocksettle sends a transaction of 2,000 satoshi to the Participant. The Participant
+                  needs to keep 1,000 satoshis on their Authentication Address as well as transfer 1,000 satoshis back to
+                  the BlockSettle Validation Address.
+                </p>
+                <p>
+                  Assuming a network fee of 400 s/b and 11,000 EUR per Bitcoin the cost to setup an Authentication Address would be:
+                </p>
+                <p>
+                  40 * s/b + 125 * s/b + 2 * 1,000 = EUR 7,26
+                </p>
+                <p>
+                  Fees are set dynamically at the point of the Participant submitting a Public Key. Having an Authentication Address is optional
+                  but required for access to the Spot XBT product group. All Authentication Addresses are setup using native
+                  SegWit.
+                </p>
+
+                <h5>Do you offer volume incentives?</h5>
+                <p>
+                  BlockSettle implements a flat fee structure without rebate schemes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id='advanced'>
+            <div class="faq-item_wrap">
+              <div>
+                <h4>
+                  Advanced
+                </h4>
+              </div>
+              <div>
+                <h5>How does the BlockSettle Terminal connect to the Bitcoin network?</h5>
+                <p>
+                  The BlockSettle Terminal connects to an ArmoryDB, which acts as a proxy and cache between the Bitcoin blockchain and the
+                  Terminal.
+                </p>
+                <p>
+                  BlockSettle runs ArmoryDB on own servers, providing Terminal users with immediate access to the Bitcoin network. Terminal
+                  users who wish to have direct access to the Bitcoin network without relying on third-party infrastructure,
+                  are encouraged to run Bitcoin Core and ArmoryDB on their own infrastructure.
+                </p>
+                <p>
+                  Further information on how to setup your own proxy can be found here:
+                  <br/>
+                  <a href="https://github.com/BlockSettle/packages" target="_blank"
+                     class="js-track-activity"
+                     hs-id="000002736662">https://github.com/BlockSettle/packages</a>
+                </p>
+
+                <h5>What is SegWit and why does BlockSettle use it?</h5>
+                <p>
+                  Segregated Witness, or SegWit, is an architectural change which removes the requirement for embedding the “unlocking script”
+                  with each input. For BlockSettle’s purposes, the upgrade was welcome as it enabled a model whereby dealers
+                  could act last in the event of them selling XBT without having to provide a signed transaction hash.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id='validations'>
+            <div class="faq-item_wrap">
+              <div>
+                <h4>
+                  Validations
+                </h4>
+              </div>
+              <div>
+                <h5>Validation Addresses</h5>
+                <p>
+                  BlockSettle funds Authentication Addresses from the following Validation Addresses:
+                </p>
+                <ul>
+                  <li>HFDSAFKLKJSADF</li>
+                  <li>ASLDFKJFLDASKJ</li>
+                  <li>ÖASDFJÖLKJDGS</li>
+                </ul>
+
+                <h5>Validation Key</h5>
+                <p>BlockSettle signs the message the Terminal relies on to conduct validations with the following key:</p>
+                <ul>
+                  <li>KJGSAF:KJSDGF</li>
+                </ul>
+
+                <h5>Genesis Addresses</h5>
+                <p>
+                  Each Private Limited Company for which BlockSettle is the registrar has its own Genesis Address. The Genesis Address can
+                  be found under the details of the Private Limited Company.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id='private-market'>
+            <div class="faq-item_wrap">
+              <div>
+                <h4>
+                  Private Market
+                </h4>
+              </div>
+              <div>
+                <h5>Tax Treatment</h5>
+                <p>
+                  Any profits which arise in a Private Limited Company, as a result of holding shares in an unlisted target company, are deemed
+                  as trade-related profits
+                  <span>(<a href="{{ env.TAX_TREATMENT_URL }}" target="_blank"
+                            class="js-track-activity"
+                            hs-id="000002736664">“näringsbetingade andelar”</a>)</span> according to Swedish tax legislation. This means that profits which arise in the Private Limited Company
+                  will not be taxed with any Corporate Income Tax.
+                </p>
+
+                <h5>Corporate Actions</h5>
+                <p>
+                  The SPV is obliged by law to call an Annual General Meeting (AGM) to which all shareholders are invited to participate. The
+                  points covered by the AGM can be found in the Articles of Association of the relevant Private Limited Company.
+                </p>
+
+                <p>
+                  Voting can be conducted electronically.
+                </p>
+
+                <h5>Disbursements</h5>
+                <p>
+                  Disbursements are made to the shareholders account with BlockSettle.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" id='another'>
+            <div class="faq-item_wrap">
+              <div>
+                <h4>
+                  I have another question!
+                </h4>
+              </div>
+              <div>
+                <p>
+                  For further questions about our products and services, please review our Getting Started Guide, Trading Procedures, and Product
+                  Specifications. For questions relating to the Client Portal we refer to our FAQ inside the portal. For
+                  other questions please contact us through the support page in the Client Portal, or email us at
+                  <a href="mailto:support@blocksettle.com">support@blocksettle.com</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

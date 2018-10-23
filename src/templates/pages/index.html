@@ -1,0 +1,312 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}BlockSettle | Home{% endblock %}
+
+{% block content %}
+
+<section id="main-section">
+  <div class="main-section_bg">
+    <div class="container">
+      <div class="row">
+        <div class="left-part col-xs-6">
+          <h1>The BlockSettle Terminal</h1>
+          <p>Our flagship platform merges sophisticated key management tools with real-time access to markets</p>
+          <a class="button button-large" href="/terminal/downloads">
+            <span>Try The Terminal</span>
+          </a>
+        </div>
+        <div class="right-part col-xs-6">
+          <img class='bs-ternimal-preview'
+               src="~assets/images/terminal/terminal-facing-perspective.png"
+               alt="BlockSettle Terminal">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="page-content">
+  <div class="container">
+    <div class="row  flex-block">
+      <div class="col-xs-6">
+        <div class="a-block clear-bottom-padding">
+          <div class="row">
+            <div class="left-part col-sm-5 col-md-5">
+              <p class="main-idea">BlockSettle: World Leader in Blockchain Settlement</p>
+            </div>
+            <div class="right-part col-sm-7 col-md-7">
+              <p>BlockSettle enhances financial stability for the blockchain market by providing real-time bilateral settlement.</p>
+            </div>
+          </div>
+
+          <div class="row sticky-bottom-row">
+            <div class="col-sm-7 col-md-7 col-md-offset-5 col-sm-offset-5">
+              <a href="{{ env.FILE_BRIEEFING_BOOK }}" target="_blank"
+                 class="js-track-activity button button-arrow"
+                 hs-id="000002485888"><span>Briefing book</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-6 ">
+        <div class="a-block clear-bottom-padding">
+          <div class="row">
+            <div class="left-part col-sm-5 col-md-5">
+              <p class="main-idea">Become a Participant</p>
+            </div>
+
+            <div class="right-part col-sm-7 col-md-7">
+              <p>Enjoy the benefits of stakeholder custody and find out what practical step you need to take to become a participant.</p>
+            </div>
+          </div>
+
+          <div class="row sticky-bottom-row">
+            <div class="col-sm-7 col-md-7 col-md-offset-5 col-sm-offset-5">
+              <a class="button button-arrow" href="/pub-registration"><span>Apply</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-8">
+        <div class="market-data">
+          <h3 class="block__title">MARKET DATA</h3>
+          <div class="market-data__content">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#SpotXBT" aria-controls="home" role="tab" data-toggle="tab">Spot XBT</a></li>
+              <li role="presentation"><a href="#SpotFX" aria-controls="profile" role="tab" data-toggle="tab">Spot FX</a></li>
+              <li role="presentation"><a href="#PrivateMarket" aria-controls="messages" role="tab" data-toggle="tab">Private Market</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="SpotXBT">
+                <div class="table table_scroll">
+                  <div class="thead">
+                    <div class="tr">
+                      <div class="th">Contract</div>
+                      <div class="th">Bid</div>
+                      <div class="th">Offer</div>
+                      <div class="th">Last</div>
+                      <div class="th">Volume</div>
+                    </div>
+                  </div>
+                  <div class="scrollbar-inner">
+                    <div class="tbody">
+                      <div class="tr">
+                        <div class="td futers"></div>
+                        <div class="td symbol"></div>
+                        <div class="td month"></div>
+                        <div class="td last"></div>
+                        <div class="td change"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div role="tabpanel" class="tab-pane" id="SpotFX">
+                <div class="table table_scroll">
+                  <div class="thead">
+                    <div class="tr">
+                      <div class="th">Contract</div>
+                      <div class="th">Bid</div>
+                      <div class="th">Offer</div>
+                      <div class="th">Last</div>
+                      <div class="th">Volume</div>
+                    </div>
+                  </div>
+
+                  <div class="scrollbar-inner">
+                    <div class="tbody">
+                      <div class="tr">
+                        <div class="td futers"></div>
+                        <div class="td symbol"></div>
+                        <div class="td month"></div>
+                        <div class="td last"></div>
+                        <div class="td change"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div role="tabpanel" class="tab-pane" id="PrivateMarket">
+                <div class="table table_scroll">
+                  <div class="thead">
+                    <div class="tr">
+                      <div class="th">Contract</div>
+                      <div class="th">Bid</div>
+                      <div class="th">Offer</div>
+                      <div class="th">Last</div>
+                      <div class="th">Volume</div>
+                    </div>
+                  </div>
+
+                  <div class="scrollbar-inner">
+                    <div class="tbody">
+                      <div class="tr">
+                        <div class="td futers"></div>
+                        <div class="td symbol"></div>
+                        <div class="td month"></div>
+                        <div class="td last"></div>
+                        <div class="td change"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="md-comment">Market data is updated every 30 seconds</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-4">
+        <div class="news">
+          <h3 class="block__title">NEWS</h3>
+          <!-- NEWS-->
+          <div class="news__content">
+            <div id="news-carousel" class="carousel slide" data-ride="carousel" data-interval="">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#news-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#news-carousel" data-slide-to="1"></li>
+                <li data-target="#news-carousel" data-slide-to="2" ></li>
+                <li data-target="#news-carousel" data-slide-to="3"></li>
+                <li data-target="#news-carousel" data-slide-to="4"></li>
+                <li data-target="#news-carousel" data-slide-to="5"></li>
+                <li data-target="#news-carousel" data-slide-to="6"></li>
+                <li data-target="#news-carousel" data-slide-to="7"></li>
+                <li data-target="#news-carousel" data-slide-to="8"></li>
+                <li data-target="#news-carousel" data-slide-to="9"></li>
+                <li data-target="#news-carousel" data-slide-to="10"></li>
+                <li data-target="#news-carousel" data-slide-to="11"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                  {% for key, item in news %}
+                    <div class="news-item">
+                      <div class="news__data">{{item['date']}}</div>
+                      <a class="news__title" href="{{item['href']}}">{{item['title']}}</a>
+                      <div class="news_text">{{item['preview']}}</div>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <!-- <div class="carousel-control_wrapp">
+                <a class="left carousel-control" href="#news-carousel" role="button" data-slide="prev">
+                  <span class="arrow-prev"></span>
+                </a>
+                <a class="right carousel-control" href="#news-carousel" role="button" data-slide="next">
+                  <span class="arrow-next"></span>
+                </a>
+              </div> -->
+            </div>
+          </div>
+          <div class="page">01</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="resourses">
+          <h3  class="block__title">RESOURCES</h3>
+
+          <nav class="resourses__nav">
+            <ul>
+              <li>
+                <a href="{{ env.FILE_BRIEEFING_BOOK }}"
+                  target="_blank"
+                  class="js-track-activity"
+                  hs-id="000002485888"
+                >Briefing Book</a>
+              </li>
+              <li>
+                <a href="{{ env.FILE_GETTING_STARTED }}"
+                  target="_blank"
+                  class="js-track-activity"
+                  hs-id="000002485890"
+                >Getting Started</a>
+              </li>
+              <li>
+                <a href="{{ env.FILE_PRODUCT_SPECIFICATIONS }}"
+                  target="_blank"
+                  class="js-track-activity"
+                  hs-id="000002485651"
+                >Product specifications</a>
+              </li>
+              <li>
+                <a href="{{ env.FILE_TRADING_PROCEDURES }}"
+                  target="_blank"
+                  class="js-track-activity"
+                  hs-id="000002485893"
+                >Trading procedures</a>
+              </li>
+              <li>
+                <a href="{{ env.FILE_AUTO_QUOTING }}"
+                  target="_blank"
+                  class="js-track-activity"
+                  hs-id="{{ env.FILE_AUTO_QUOTING_TID }}"
+                >Auto-quoting</a>
+              </li>
+              <li>
+                <a href="{{ env.FILE_BLOCKSETTLE_SIGNER }}"
+                  target="_blank"
+                  class="js-track-activity"
+                  hs-id="000003000769"
+                >Signer</a>
+              </li>
+              <li>
+                <a href="{{ env.FILE_FEE_SCHEDULE }}"
+                  target="_blank"
+                  class="js-track-activity"
+                  hs-id="{{ env.FILE_FEE_SCHEDULE_TID }}"
+                >Fee schedule</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type='text/javascript' >
+  $(function() {
+    window.bs.refreshMarketData.init();
+
+    $('.scrollbar-inner').scrollbar();
+
+    $('#news-carousel')
+      .carousel({
+        pause: true,
+        interval: false
+      })
+      .on('slid.bs.carousel', function () {
+        var pageNumber = parseInt(
+          $('.carousel-indicators li.active').attr('data-slide-to')
+        );
+
+        pageNumber = pageNumber + 1;
+
+        if (pageNumber > 9) {
+          $('.page').text(pageNumber);
+        } else {
+          $('.page').text('0' + pageNumber);
+        }
+      });
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,66 @@
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 85%;
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    width: 69%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+html {
+  font-size: 12px;
+  position: relative;
+  min-height: 100%;
+}
+
+@media screen and (min-width: 1450px) {
+  .container {
+    width: 69%;
+    min-width: 1170px;
+  }
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .container {
+    width: 61%;
+  }
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4;
+  min-width: 1024px;
+  counter-reset: section;
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+  height: 5.71rem;
+  position: relative;
+}
+
+.page-content {
+  overflow: hidden;
+}

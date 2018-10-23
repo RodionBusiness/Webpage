@@ -1,0 +1,89 @@
+{% extends "layouts/layout.html" %}
+
+{% block title %}BlockSettle | Spot FX{% endblock %}
+
+{% block content %}
+  <section class="top-section">
+    <div class="top-section_wrap">
+      <div class="container">
+        <h1>Spot FX</h1>
+        <p>Contracts are DDD/CCC, where DDD and CCC represent different currencies. The quantity of&nbsp;an&nbsp;order is&nbsp;the amount of&nbsp;DDD, the base currency. The price is&nbsp;CCC, the quote currency, per unit DDD. Only currencies deliverable by&nbsp;book-entry shifts in&nbsp;the BlockSettle system are allowed for this contract.
+        </p>
+        <a href="/products/private-market">Private Market </span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class='page-content'>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 ">
+          <table class="full-description">
+            <tbody>
+            <tr>
+              <td>Currencies traded</td>
+              <td>EUR, GBP, JPY, SEK</td>
+            </tr>
+            <tr>
+              <td>Matching Model</td>
+              <td>Request-for-Quote (RFQ)</td>
+            </tr>
+            <tr>
+              <td>Minimum Lot size</td>
+              <td>0.01</td>
+            </tr>
+            <tr>
+              <td>Order Priority</td>
+              <td>Price – Time</td>
+            </tr>
+            <tr>
+              <td>Cash collateral</td>
+              <td>Orders are collateralised by cash deposited with the BlockSettle service</td>
+            </tr>
+            <tr>
+              <td>Trading Schedule</td>
+              <td>24 x 7 x 365</td>
+            </tr>
+            <tr>
+              <td>Cash Settlement</td>
+              <td>Immediate book-entry settlement</td>
+            </tr>
+            <tr>
+              <td>Settlement Finality</td>
+              <td>Once book-entry settlement has occurred</td>
+            </tr>
+
+            </tbody>
+          </table>
+          <div class="schedule_wrap">
+            <div class="title"><p>Quote Schedule</p></div>
+            <table class="schedule">
+              <tbody>
+              <tr>
+                <td>RFQ Submission</td>
+                <td>00:00.00</td>
+              </tr>
+              <tr>
+                <td>Responsive Quote Period</td>
+                <td>00:00.01 – 00:30.00</td>
+              </tr>
+              <tr>
+                <td>Quote Acceptance Period</td>
+                <td>00:30.01 – 01:00.00</td>
+              </tr>
+              <tr>
+                <td>Settlement</td>
+                <td>Immediate book-entry settlement</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+{% endblock %}
+
+
+
